@@ -16,6 +16,7 @@ Bundle 'kien/ctrlp.vim.git'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'ervandew/supertab'
 Bundle 'mattn/emmet-vim'
+Bundle 'scrooloose/nerdtree'
 
 " vim-scripts repos
 Bundle 'L9'
