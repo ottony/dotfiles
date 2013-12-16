@@ -1,6 +1,8 @@
 cd ~; mv .vimrc .vimrc.b; mv .tmux.conf .tmux.conf.b; echo "removed before configurations. Files renamed to .vimrc.b and .tmux.conf.b";
-echo "Cloning https://github.com/ottony/dotfiles.git into ~/. ...";
-git clone https://github.com/ottony/dotfiles.git ~/.;
+echo "Get .vimrc file ...";
+curl https://raw.github.com/ottony/dotfiles/master/.vimrc ~/.;
+echo "Get .tmux.conf file ...";
+curl https://raw.github.com/ottony/dotfiles/master/.tmux.conf ~/.;
 echo "Cloning vundle https://github.com/gmarik/vundle.git into ~/.vim/bundle/vundle ...";
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle;
 echo "Installing plugins ...";
