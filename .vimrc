@@ -25,4 +25,8 @@ Bundle 'FuzzyFinder'
 " non-GitHub repos
 Bundle 'git://git.wincent.com/command-t.git'
 
+
 filetype plugin indent on     " required!
+
+" keys
+:nnoremap <Leader>p :NERDTree<cr>
