@@ -30,3 +30,10 @@ filetype plugin indent on     " required!
 
 " keys
 :nnoremap <Leader>p :NERDTree<cr>
+
+:set list!
+:set listchars=tab:>-,trail:.
+:set tabstop=2
+:set shiftwidth=2
+:set smarttab
+:set expandtab
