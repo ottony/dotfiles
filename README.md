@@ -1,4 +1,20 @@
-## Dotfiles to Vim and Tmux
+## Dotfiles for Vim and Tmux
+
+### Screenshot
+![It looks like this!](media/screenshot.png)
+
+### Plugins used
+* vundle
+* vim-bundler
+* vim-rails
+* vim-fugitive
+* ctrlp-vim
+* numbers
+* nerdtree
+* nerdcommenter
+* emmet-vim
+* vim-snipmate
+* supertab
 
 ### Install
 
