@@ -38,7 +38,7 @@ Bundle 'bling/vim-airline'
 filetype plugin indent on     " required!
 
 " keys
-:nnoremap <Leader>p :NERDTree<cr>
+:nnoremap <Leader>p :NERDTreeToggle<cr>
 
 :set list!
 :set listchars=tab:>-,trail:.
