@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-bundler.git'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-endwise.git'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'kien/ctrlp.vim.git'
