@@ -21,3 +21,9 @@
 ```
 curl https://raw.github.com/ottony/dotfiles/master/install.sh | sh
 ```
+### Git Alias
+  git lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  git dif = diff --color
+  git s = status
+  git rf = rebase FETCH_HEAD
+  git fo = fetch origin
