@@ -48,3 +48,7 @@ filetype plugin indent on     " required!
 :set smarttab
 :set expandtab
 :set noswapfile
+
+map <C-c> "+yy
+map <C-v> "+p
+map <C-x> "+dd
