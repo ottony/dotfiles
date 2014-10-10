@@ -28,6 +28,9 @@ Bundle 'FuzzyFinder'
 " Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'wincent/Command-T'
 
+" Tabular
+Bundle 'godlygeek/tabular'
+
 " Snipmate snippets
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -41,6 +44,7 @@ filetype plugin indent on     " required!
 
 " keys
 :nnoremap <Leader>p :NERDTreeToggle<cr>
+:nnoremap <Leader>t :Tab /:\zs<cr>
 
 :set list!
 :set listchars=tab:>-,trail:.
