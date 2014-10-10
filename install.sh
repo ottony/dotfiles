@@ -29,4 +29,8 @@ echo "\033[1;33mInstalling plugins ...\033[0m";
 vim +BundleInstall +qall;
 
 echo "  ";
-echo "\033[1;32mEverything is up to date ;)\033[0m";
+echo "\033[1;33mUpdating plugins ...\033[0m";
+vim +BundleUpdate +qall;
+
+echo "  ";
+echo "\033[1;32mEverything is awesome...\033[0m";
