@@ -19,7 +19,7 @@
 ### Install
 
 ```
-curl https://raw.github.com/ottony/dotfiles/master/install.sh | sh
+curl https://raw.githubusercontent.com/ottony/dotfiles/master/install.sh | sh
 ```
 ### Git Alias
   * git lg
