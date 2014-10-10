@@ -54,6 +54,10 @@ filetype plugin indent on     " required!
 :set expandtab
 :set noswapfile
 
+" Settings to numbers
+:set number
+:au FocusGained * :set relativenumber
+
 map <C-c> "+yy
 map <C-v> "+p
 map <C-x> "+dd
