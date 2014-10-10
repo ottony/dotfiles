@@ -25,7 +25,8 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 
 " non-GitHub repos
-Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'wincent/Command-T'
 
 " Snipmate snippets
 Bundle 'MarcWeber/vim-addon-mw-utils'
