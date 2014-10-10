@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ~; mv .vimrc .vimrc.bkp; mv .tmux.conf .tmux.conf.bkp;
 echo "  ";
 echo "\033[1;34mremoved before configurations. Files renamed to .vimrc.bkp and .tmux.conf.bkp\033[0m";
