@@ -44,6 +44,7 @@ filetype plugin indent on     " required!
 
 " keys
 :nnoremap <Leader>p :NERDTreeToggle<cr>
+:nnoremap <Leader>n :NERDTreeToggle<cr>
 :nnoremap <Leader>t :Tab /:\zs<cr>
 
 :set list!
