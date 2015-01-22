@@ -19,6 +19,7 @@ Bundle 'ervandew/supertab'
 Bundle 'mattn/emmet-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'elixir-lang/vim-elixir'
 
 " vim-scripts repos
 Bundle 'L9'
