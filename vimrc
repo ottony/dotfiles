@@ -63,3 +63,5 @@ filetype plugin indent on     " required!
 map <C-c> "+yy
 map <C-v> "+p
 map <C-x> "+dd
+
+autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
