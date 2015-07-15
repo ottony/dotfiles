@@ -65,3 +65,4 @@ map <C-v> "+p
 map <C-x> "+dd
 
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
+autocmd BufNewFile,BufReadPost *.arb set filetype=ruby
