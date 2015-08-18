@@ -20,6 +20,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'airblade/vim-gitgutter'
 
 " vim-scripts repos
 Bundle 'L9'
