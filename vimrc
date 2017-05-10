@@ -75,6 +75,9 @@ map <C-c> "+yy
 map <C-v> "+p
 map <C-x> "+dd
 
+filetype plugin on
+syntax on
+
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
 autocmd BufNewFile,BufReadPost *.arb set filetype=ruby
 autocmd BufNewFile,BufReadPost *.es6 set filetype=javascript
