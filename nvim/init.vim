@@ -10,7 +10,6 @@ if filereadable(expand("~/.config/nvim/bundles.vim"))
 endif
 
 " keys
-:nnoremap <Leader>p :NERDTreeToggle<cr>
 :nnoremap <Leader>n :NERDTreeToggle<cr>
 :nnoremap <Leader>n :NERDTreeToggle<cr>
 
@@ -34,8 +33,11 @@ end
 :set noswapfile
 
 " Settings to fzf
+" https://github.com/ggreer/the_silver_searcher
 :set rtp+=/usr/local/opt/fzf
 :nmap <C-p> :Files<CR>
+:nmap <C-f> :Ag<CR>
+:nnoremap <Leader>p :GFiles<CR>
 
 " Settings to numbers
 :set number
