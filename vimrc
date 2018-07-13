@@ -21,6 +21,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'othree/yajs.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'junegunn/fzf.vim'
 
 " Go Lang
 Bundle 'fatih/vim-go'
