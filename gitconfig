@@ -1,6 +1,7 @@
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  dif = diff --color
   s = status
   rf = rebase FETCH_HEAD
   fo = fetch origin
+  cp = cherry-pick
+  clear-branchs = !git fetch origin && git fetch origin --prune && git branch | grep -v master | xargs git branch -D && git branch -a
