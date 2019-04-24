@@ -1,6 +1,6 @@
 let neobundle_readme=expand('~/.config/nvim/bundle/neobundle.vim/README.md')
 
-if !filereadable(neobundle_readme)  
+if !filereadable(neobundle_readme)
   echo "Installing NeoBundle..."
   echo ""
   silent !mkdir -p ~/.config/nvim/bundle
@@ -8,7 +8,7 @@ if !filereadable(neobundle_readme)
   let g:not_finsh_neobundle = "yes"
 endif
 
-call neobundle#begin(expand('$HOME/.config/nvim/bundle'))  
+call neobundle#begin(expand('$HOME/.config/nvim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " original repos on GitHub
@@ -25,9 +25,14 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'othree/yajs.vim'
-NeoBundle 'kien/ctrlp.vim'
+" NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'janko-m/vim-test'
+NeoBundle 'junegunn/fzf.vim'
+NeoBundle 'w0rp/ale'
+"NeoBundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " NeoBundle 'Valloric/YouCompleteMe', { 'build' : {'mac': './install.sh --clang-completer --system-libclang --omnisharp-completer' } }
+NeoBundle 'jreybert/vimagit'
+NeoBundle 'ntpeters/vim-better-whitespace'
 
 " Go Lang
 NeoBundle 'fatih/vim-go'
@@ -37,7 +42,6 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'slashmili/alchemist.vim'
 
 " Javascript
-"NeoBundle 'w0rp/ale'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
 
@@ -63,7 +67,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'chriskempson/tomorrow-theme', { 'rtp': 'vim/' }
 NeoBundle 'vim-airline/vim-airline-themes'
 
-call neobundle#end()  
+call neobundle#end()
 
 filetype plugin indent on
 
