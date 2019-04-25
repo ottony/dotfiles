@@ -10,8 +10,7 @@ endif
 " Test
 :nmap <silent> <leader>t :TestNearest<CR>
 :nmap <silent> <leader>T :TestFile<CR>
-:nmap <silent> <leader>f :TestSuite<CR>
-:nmap <silent> <leader>s :TestSuite<CR>
+" :nmap <silent> <leader>f :TestSuite<CR>
 :nmap <silent> <leader>l :TestLast<CR>
 :nmap <silent> <leader>g :TestVisit<CR>
 
@@ -19,6 +18,32 @@ endif
 if has('nvim')
   tmap <leader>[ <C-\><C-n>
 end
+
+" <Leader>f{char} to move to {char}
+:map  <Leader>f <Plug>(easymotion-bd-f)
+:nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" Easy motion
+
+:map z/ <Plug>(incsearch-fuzzy-/)
+:map z? <Plug>(incsearch-fuzzy-?)
+:map zg/ <Plug>(incsearch-fuzzy-stay)
+
+function! s:config_easyfuzzymotion(...) abort
+  return extend(copy({
+  \   'converters': [incsearch#config#fuzzyword#converter()],
+  \   'modules': [incsearch#config#easymotion#module({'overwin': 1})],
+  \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+  \   'is_expr': 0,
+  \   'is_stay': 1
+  \ }), get(a:, 1, {}))
+endfunction
+
+:noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
+
+" :map z/ <Plug>(incsearch-easymotion-/)
+" :map z? <Plug>(incsearch-easymotion-?)
+" :map zg/ <Plug>(incsearch-easymotion-stay)
 
 :set list!
 :set listchars=tab:>-,trail:.
@@ -29,7 +54,7 @@ end
 :set noswapfile
 
 " Settings to fzf
-:set rtp+=/usr/local/opt/fzf
+:set rtp+=/home/ottony/.fzf/bin/fzf
 :nmap <C-p> :Files<CR>
 :nmap <C-f> :Ag<CR>
 :nnoremap <Leader>p :GFiles<CR>
