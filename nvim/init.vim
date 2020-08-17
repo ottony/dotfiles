@@ -1,4 +1,4 @@
-" ================ Plugins ====================
+"hi ActiveWindow guibg=#17252c ================ Plugins ====================
 if filereadable(expand("~/.config/nvim/dein.vim"))
   source ~/.config/nvim/dein.vim
 endif
@@ -45,13 +45,26 @@ endfunction
 " :map z? <Plug>(incsearch-easymotion-?)
 " :map zg/ <Plug>(incsearch-easymotion-stay)
 
+
+" Quick jumping between splits
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-H> <C-W>h
+nmap <C-L> <C-W>l
+
 :set list!
-:set listchars=tab:>-,trail:.
+":set listchars=tab:>-,trail:.
+:set listchars=tab:\│\ ,trail:.,extends:>,precedes:<,nbsp:+
 :set tabstop=2
 :set shiftwidth=2
 :set smarttab
 :set expandtab
 :set noswapfile
+":set mouse=a
+"vmap <LeftRelease> "*ygv
+
+" Clear Search
+:nmap <C-l> :noh<CR>
 
 " Settings to fzf
 :set rtp+=/home/ottony/.fzf/bin/fzf
@@ -72,17 +85,43 @@ autocmd BufNewFile,BufReadPost *.es6 set filetype=javascript
 autocmd BufNewFile,BufReadPost *.js.snap set filetype=javascript
 autocmd BufRead,BufNewFile,BufEnter ~/projects/go_projects/* setlocal ts=2 sts=2 sw=2
 
+" Vim Go Binding
+autocmd FileType go command! A GoAlternate " Test Files
+
+" Go Imports
+let g:go_fmt_command = "goimports"
+
+":nmap <C-[> :GoImplements<CR>
+
+" Go Highlight
+"let g:go_highlight_types = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+
+let NERDTreeShowHidden = 1
+" let NERDTreeQuitOnOpen = 1
+autocmd VimEnter * NERDTree
+
 let g:auto_save = 0
 let g:auto_save_in_insert_mode = 0
 
 " ================ Visual ==================
 " set background=dark
 " colorscheme Tomorrow-Night-Eighties
+colorscheme peachpuff
 
 " Highlight current line
 set cursorline
 
-set colorcolumn=90
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+" set colorcolumn=90
+" let &colorcolumn=join(range(81,999),",")
+" let &colorcolumn="80,".join(range(120,999),",")
+let &colorcolumn="81"
+
+" gitgutter sign column
+highlight! link SignColumn LineNr
 
 " Eslint
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'

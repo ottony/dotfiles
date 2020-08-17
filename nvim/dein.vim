@@ -16,7 +16,6 @@ set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
-
     call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
     call dein#add('Shougo/deoplete.nvim')
 
@@ -43,19 +42,21 @@ if dein#load_state('~/.cache/dein')
 
     " Go Lang
     call dein#add('fatih/vim-go')
+    call dein#add('SirVer/ultisnips')
 
     " Elixir
     call dein#add('elixir-lang/vim-elixir')
     call dein#add('slashmili/alchemist.vim')
 
     " Javascript
-    "call dein#add('w0rp/ale')
+    call dein#add('w0rp/ale')
     call dein#add('pangloss/vim-javascript')
     call dein#add('mxw/vim-jsx')
 
     " vim-scripts repos
     call dein#add('vim-scripts/L9')
     call dein#add('vim-scripts/FuzzyFinder')
+    call dein#add('jceb/vim-orgmode')
 
     " non-GitHub repos
     " call dein#add('git://git.wincent.com/command-t.git')
@@ -74,6 +75,9 @@ if dein#load_state('~/.cache/dein')
     call dein#add('bling/vim-airline')
     call dein#add('chriskempson/tomorrow-theme', { 'rtp': 'vim/' })
     call dein#add('vim-airline/vim-airline-themes')
+
+    " Org Mode
+    call dein#add('jceb/vim-orgmode')
 
   call dein#end()
   call dein#save_state()
