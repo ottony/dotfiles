@@ -1,3 +1,7 @@
+[user]
+	name = Ottony Costa
+	email = ottony93@gmail.com
+
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   s = status
@@ -6,3 +10,5 @@
   cp = cherry-pick
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   clear-branchs = !git fetch origin && git fetch origin --prune && git branch | grep -v master | xargs git branch -D && git branch -a
+[url "git@github.com:"]
+	insteadOf = https://github.com/
