@@ -40,6 +40,9 @@ if dein#load_state('~/.cache/dein')
     call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
     " call dein#add('Valloric/YouCompleteMe', { 'build' : {'mac': './install.sh --clang-completer --system-libclang --omnisharp-completer' } })
 
+    " Scala
+    call dein#add('derekwyatt/vim-scala')
+
     " Go Lang
     call dein#add('fatih/vim-go')
     call dein#add('SirVer/ultisnips')

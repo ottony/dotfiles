@@ -118,12 +118,15 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 " set colorcolumn=90
 " let &colorcolumn=join(range(81,999),",")
 " let &colorcolumn="80,".join(range(120,999),",")
-let &colorcolumn="81"
+let &colorcolumn="81,121"
 
 " gitgutter sign column
 highlight! link SignColumn LineNr
 
 " Eslint
+" Warning color
+highlight ALEWarning ctermbg=8
+
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
