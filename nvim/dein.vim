@@ -78,6 +78,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('bling/vim-airline')
     call dein#add('chriskempson/tomorrow-theme', { 'rtp': 'vim/' })
     call dein#add('vim-airline/vim-airline-themes')
+    call dein#add('wojciechkepka/vim-github-dark')
 
     " Org Mode
     call dein#add('jceb/vim-orgmode')

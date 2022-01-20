@@ -5,7 +5,7 @@ endif
 
 " keys
 :nnoremap <Leader>n :NERDTreeToggle<cr>
-:nnoremap <Leader>n :NERDTreeToggle<cr>
+:nnoremap <Leader>o :NERDTreeFind<cr>
 
 " Test
 :nmap <silent> <leader>t :TestNearest<CR>
@@ -17,6 +17,7 @@ endif
 " Test scrool \[
 if has('nvim')
   tmap <leader>[ <C-\><C-n>
+  tmap <leader><Esc> <C-\><C-n>
 end
 
 " <Leader>f{char} to move to {char}
@@ -100,8 +101,8 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 
 let NERDTreeShowHidden = 1
-" let NERDTreeQuitOnOpen = 1
-autocmd VimEnter * NERDTree
+" let NERDTreeQuitOnOpen = 1 " Auto close when open file
+" autocmd VimEnter * NERDTree " Auto open
 
 let g:auto_save = 0
 let g:auto_save_in_insert_mode = 0
@@ -109,7 +110,9 @@ let g:auto_save_in_insert_mode = 0
 " ================ Visual ==================
 " set background=dark
 " colorscheme Tomorrow-Night-Eighties
-colorscheme peachpuff
+"colorscheme peachpuff
+colorscheme ghdark
+" let g:gh_color = "soft"
 
 " Highlight current line
 set cursorline
