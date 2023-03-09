@@ -101,8 +101,9 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 
 let NERDTreeShowHidden = 1
-" let NERDTreeQuitOnOpen = 1 " Auto close when open file
-" autocmd VimEnter * NERDTree " Auto open
+let NERDTreeQuitOnOpen = 1 " Auto close when open file
+autocmd VimEnter * NERDTree " Auto open
+autocmd VimEnter * wincmd p " Jump to the previous window, there is the opened file
 
 let g:auto_save = 0
 let g:auto_save_in_insert_mode = 0
@@ -138,5 +139,8 @@ let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
 
+let g:snipMate = { 'snippet_version' : 1 }
+
 " Ignore file names on Ag search fzf
 "command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
+"
