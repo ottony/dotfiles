@@ -42,11 +42,6 @@ endfunction
 
 :noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 
-" :map z/ <Plug>(incsearch-easymotion-/)
-" :map z? <Plug>(incsearch-easymotion-?)
-" :map zg/ <Plug>(incsearch-easymotion-stay)
-
-
 " Quick jumping between splits
 nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
@@ -61,7 +56,7 @@ nmap <C-L> <C-W>l
 :set smarttab
 :set expandtab
 :set noswapfile
-":set mouse=a
+:set mouse= " disable mouse
 "vmap <LeftRelease> "*ygv
 
 " Clear Search
@@ -144,3 +139,5 @@ let g:snipMate = { 'snippet_version' : 1 }
 " Ignore file names on Ag search fzf
 "command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
 "
+
+let g:CommandTPreferredImplementation='lua'
