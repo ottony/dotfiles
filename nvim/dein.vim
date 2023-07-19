@@ -32,28 +32,35 @@ call dein#begin(s:dein_base)
 
   call dein#add(s:dein_src)
 
-  "call dein#add('Shougo/neosnippet.vim')
-  "call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('tpope/vim-rails.git')
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('tpope/vim-endwise.git') " ruby end
-  call dein#add('Lokaltog/vim-easymotion')
-  call dein#add('haya14busa/incsearch.vim')
-  call dein#add('haya14busa/incsearch-fuzzy.vim')
-  call dein#add('haya14busa/incsearch-easymotion.vim')
-  call dein#add('rstacruz/sparkup', {'rtp': 'vim/'})
-  call dein#add('myusuf3/numbers.vim')
-  call dein#add('ervandew/supertab')
-  call dein#add('mattn/emmet-vim')
   call dein#add('scrooloose/nerdtree')
   call dein#add('scrooloose/nerdcommenter')
-  call dein#add('airblade/vim-gitgutter')
-  call dein#add('othree/yajs.vim')
+
+  call dein#add('tpope/vim-rails.git')
+  call dein#add('tpope/vim-fugitive') " git commands
+  call dein#add('tpope/vim-endwise.git') " ruby end
+  call dein#add('airblade/vim-gitgutter') " git signs
+  call dein#add('github/copilot.vim') " git signs
+
+  call dein#add('myusuf3/numbers.vim') " relative numbers
   call dein#add('janko-m/vim-test')
-  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
+  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 }) " fuzzy search
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
-  " call dein#add('Valloric/YouCompleteMe', { 'build' : {'mac': './install.sh --clang-completer --system-libclang --omnisharp-completer' } })
+
+  "call dein#add('neoclide/coc.nvim', { 'rev': 'release' })
+
+  "call dein#add('Shougo/neosnippet.vim')
+  "call dein#add('Shougo/neosnippet-snippets')
+  "call dein#add('Shougo/deoplete.nvim') " autocomplete
+  call dein#add('Lokaltog/vim-easymotion') " motion by letters
+  "call dein#add('haya14busa/incsearch.vim')
+  "call dein#add('haya14busa/incsearch-fuzzy.vim')
+  "call dein#add('haya14busa/incsearch-easymotion.vim')
+  call dein#add('ervandew/supertab') " tab
+  "call dein#add('Valloric/YouCompleteMe', { 'build' : {'mac': './install.sh --clang-completer --system-libclang --omnisharp-completer' } })
+
+  " HTML
+  call dein#add('rstacruz/sparkup', {'rtp': 'vim/'})
+  call dein#add('mattn/emmet-vim')
   
   " Graphql
   call dein#add('jparise/vim-graphql')
@@ -70,6 +77,7 @@ call dein#begin(s:dein_base)
   " call dein#add('slashmili/alchemist.vim')
 
   " Javascript
+  call dein#add('othree/yajs.vim')
   call dein#add('w0rp/ale')
   call dein#add('pangloss/vim-javascript')
   call dein#add('mxw/vim-jsx')
@@ -92,6 +100,7 @@ call dein#begin(s:dein_base)
   " call dein#add('garbas/vim-snipmate')
   " call dein#add('honza/vim-snippets')
 
+  " UI
   call dein#add('bling/vim-airline')
   call dein#add('chriskempson/tomorrow-theme', { 'rtp': 'vim/' })
   call dein#add('vim-airline/vim-airline-themes')
