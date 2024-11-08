@@ -3,6 +3,9 @@ if filereadable(expand("~/.config/nvim/dein.vim"))
   source ~/.config/nvim/dein.vim
 endif
 
+" Set <Leader> key as <Space>
+let g:mapleader = " "
+
 " keys
 :nnoremap <Leader>n :NERDTreeToggle<cr>
 :nnoremap <Leader>o :NERDTreeFind<cr>
@@ -125,6 +128,19 @@ highlight! link SignColumn LineNr
 " Eslint
 " Warning color
 highlight ALEWarning ctermbg=8
+
+" https://github.com/dense-analysis/ale/blob/master/doc/ale-ruby.txt
+let g:ale_linters = {
+  \ 'ruby'   : ['rubocop']
+  \}
+let g:ale_fixers = {
+  \ 'ruby'     : ['rubocop']
+  \}
+
+let g:ale_ruby_rubocop_executable = 'bundle'
+let g:ale_ruby_rubocop_auto_correct_all = 1
+let g:ale_lint_on_save = 1
+nnoremap <Leader>lf :ALEFix<cr>
 
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
